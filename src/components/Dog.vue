@@ -15,4 +15,9 @@ export default {
 </script>
 
 <style lang="scss">
+  .dog {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    box-shadow: 0 1px 12px hsl(0, 0%, 80%)
+  }
 </style>
