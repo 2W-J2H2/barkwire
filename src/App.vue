@@ -16,6 +16,22 @@ import Dogs from "@/components/Dogs"
 export default {
   components: {
     Dogs
+  },
+  computed: {
+    dogs(){
+      return [{
+        name: "Bixby",
+        description: "A killer dog"
+      }, 
+      {
+        name: "Flux",
+        description: "A mountain dog"
+      }, 
+      {
+        name: "Lucy",
+        description: "A racing dog"
+      }]
+    }
   }
 }
 </script>

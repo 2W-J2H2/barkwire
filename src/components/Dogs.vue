@@ -3,19 +3,19 @@
         <li>
           <Dog
             name="Bixby"
-            description="The best dog" 
+            description="A killer dog" 
           />
         </li>
         <li>
           <Dog
             name="Flux"
-            description="The fastest dog" 
+            description="A mountain dog" 
           />
         </li>
         <li>
           <Dog
             name="Lucy"
-            description="The tallest dog" 
+            description="" 
           />
         </li>
       </ul>
