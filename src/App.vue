@@ -5,29 +5,20 @@
     </header>
     <main>
       <h2>Dogs</h2>
-      <ul class="dogs">
-        <li>
-          <div class="dog">
-            <h3>Bixby</h3>
-            <p>The best dog</p>
-          </div>
-        </li>
-        <li>
-          <div class="dog">
-            <h3>Bixby</h3>
-            <p>The best dog</p>
-          </div>
-        </li>
-        <li>
-          <div class="dog">
-            <h3>Bixby</h3>
-            <p>The best dog</p>
-          </div>
-        </li>
-      </ul>
+      <Dogs />
     </main>
   </div>
 </template>
+
+<script>
+import Dogs from "@/components/Dogs"
+
+export default {
+  components: {
+    Dogs
+  }
+}
+</script>
 
 <style lang="scss"> 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
