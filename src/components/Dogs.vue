@@ -1,27 +1,25 @@
 <template>
     <ul class="dogs">
         <li>
-          <div class="dog">
-            <h3>Bixby</h3>
-            <p>The best dog</p>
-          </div>
+          <Dog />
         </li>
         <li>
-          <div class="dog">
-            <h3>Bixby</h3>
-            <p>The best dog</p>
-          </div>
+          <Dog />
         </li>
         <li>
-          <div class="dog">
-            <h3>Bixby</h3>
-            <p>The best dog</p>
-          </div>
+          <Dog />
         </li>
       </ul>
 </template>
 
 <script>
+import Dog from "@/components/Dog"
+
+export default {
+  components: {
+    Dog
+  }
+}
 </script>
 
 <style lang="scss">
