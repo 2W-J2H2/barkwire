@@ -1,13 +1,22 @@
 <template>
     <ul class="dogs">
         <li>
-          <Dog />
+          <Dog
+            name="Bixby"
+            description="The best dog" 
+          />
         </li>
         <li>
-          <Dog />
+          <Dog
+            name="Flux"
+            description="The fastest dog" 
+          />
         </li>
         <li>
-          <Dog />
+          <Dog
+            name="Lucy"
+            description="The tallest dog" 
+          />
         </li>
       </ul>
 </template>
