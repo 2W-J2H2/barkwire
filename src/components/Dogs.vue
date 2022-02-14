@@ -1,30 +1,18 @@
 <template>
     <ul class="dogs">
-        <li>
-          <Dog
-            name="Bixby"
-            description="A killer dog" 
-          />
-        </li>
-        <li>
-          <Dog
-            name="Flux"
-            description="A mountain dog" 
-          />
-        </li>
-        <li>
-          <Dog
-            name="Lucy"
-            description="" 
-          />
-        </li>
-      </ul>
+      <li v-for="dog in dogs" :key="dog.id">
+        <Dog :name="dog.name" :description="dog.description"/>
+      </li>
+    </ul>
 </template>
 
 <script>
 import Dog from "@/components/Dog"
 
 export default {
+  props: {
+    dogs: Array
+  },
   components: {
     Dog
   }

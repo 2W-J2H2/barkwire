@@ -5,7 +5,7 @@
     </header>
     <main>
       <h2>Dogs</h2>
-      <Dogs />
+      <Dogs :dogs="dogs"/>
     </main>
   </div>
 </template>
