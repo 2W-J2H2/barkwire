@@ -7,7 +7,7 @@
         :key="dog.id"
         class="dog-listing"
       >
-        {{dog.name}}} - {{dog.age}}}
+        {{dog.name}} - {{dog.age}}
       </li>
     </ul>
   </div>
@@ -17,24 +17,15 @@
 export default {
   data() {
     return {
-      dogs: [
-        {
-          id: 0,
-          name: "Bixby",
-          age: 20,
-        },
-        {
-          id: 1,
-          name: "Mesa",
-          age: 18,
-        },
-        {
-          id: 2,
-          name: "Harmony",
-          age: 4
-        },
-      ]
+      dogs: []
     }
+  },
+  created(){
+    fetch("http://localhost:3000/dogs")
+      .then(response => response.json())
+      .then(({dogs}) => {
+        this.dogs = dogs
+      })
   }
 }
 </script>
